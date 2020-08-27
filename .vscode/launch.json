@@ -9,8 +9,7 @@
       "type": "python",
       "request": "launch",
       "program": "${workspaceFolder}/mysite/manage.py",
-      "args": ["runserver"],
-      //   , "--noreload"
+      "args": ["runserver", "--noreload"],
       "django": true
     }
   ]

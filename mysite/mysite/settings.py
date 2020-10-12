@@ -34,15 +34,16 @@ SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = [
+    "blog.apps.BlogConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
-    "django.contrib.sessions",
     "django.contrib.messages",
-    "django.contrib.staticfiles",
-    "django.contrib.sites",
+    "django.contrib.postgres",
+    "django.contrib.sessions",
     "django.contrib.sitemaps",
-    "blog.apps.BlogConfig",
+    "django.contrib.sites",
+    "django.contrib.staticfiles",
     "taggit",
 ]
 
@@ -82,11 +83,13 @@ WSGI_APPLICATION = "mysite.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "blog",
+        "USER": "blog",
+        "PASSWORD": "blog",
+        "HOST": "127.0.0.1",
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

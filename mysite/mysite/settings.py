@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.staticfiles",
     "taggit",
+    "django_migration_linter",
 ]
 
 MIDDLEWARE = [

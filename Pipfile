@@ -11,6 +11,7 @@ django-taggit = "*"
 markdown = "*"
 psycopg2 = "*"
 django-migration-linter = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.8"
